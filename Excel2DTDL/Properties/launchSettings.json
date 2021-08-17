@@ -1,8 +1,7 @@
 {
   "profiles": {
     "Excel2DTDL": {
-      "commandName": "Project",
-      "commandLineArgs": "Excel2DTDL_Template.xlsx"
+      "commandName": "Project"
     }
   }
 }

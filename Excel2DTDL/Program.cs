@@ -39,7 +39,7 @@ namespace Excel2DTDL
             //Log.Ok($"Service client created – ready to go");
             Log.Ok($"Usage: Excel2DTDL <excelfilename.xls>");
 
-            if (!args[0].EndsWith(".xlsx"))
+            if (args.Length != 1 || !args[0].EndsWith(".xlsx"))
             {
                 Log.Error("Please input excel filename.");
                 Environment.Exit(0);
