@@ -10,7 +10,6 @@
 - 특정 타입의 정의가 없다면 모두 지워줍니다. Telemetry, Component가 없다면 모두 지워줍니다. 
 - Property, Telemetry, Component, Relationship의 이름(name)은 Unique 해야 합니다. 
 - Property, Telemetry의 type과 unit 은 미리 정의된 Semantic Types 을 정의하는데 사용합니다. 문서의 [Semantic Types](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#semantic-types)을 참조하세요.
-- 
 
 ## 사용방법 
 - .net core 3.1 이 설치되어야 합니다. [설치 페이지](https://dotnet.microsoft.com/download/dotnet/3.1)
@@ -27,3 +26,9 @@ Validating ...
 DTDL is valid.
 DTDL is saved to 'dtdl.json' file.
 ```
+
+## DTDL의 업로드 
+- Digital Twin Explorer를 이용하여 업로드 합니다. 
+- 모든 Interface 모델이 하나의 파일로 생성됩니다. dtdl.json 파일을 업로드해주세요.
+
+![Digital Twin Explorer](images/digital-twin-explorer.jpg)
