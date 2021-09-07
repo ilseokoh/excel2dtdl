@@ -99,7 +99,9 @@ namespace Excel2DTDL
                 schema = sheet.Cells[rowNum, 3].Value.ToString(),
                 writable = sheet.Cells[rowNum, 4].Value == null ? (bool?)null : bool.Parse(sheet.Cells[rowNum, 4].Value.ToString().ToLower()),
                 type = sheet.Cells[rowNum, 5].Value == null ? new string[1] { "Property"} : new string[2] { "Property", sheet.Cells[rowNum, 5].Value.ToString() },
-                unit = sheet.Cells[rowNum, 6].Value == null ? null : sheet.Cells[rowNum, 6].Value.ToString()
+                unit = sheet.Cells[rowNum, 6].Value == null ? null : sheet.Cells[rowNum, 6].Value.ToString(),
+                displayName = sheet.Cells[rowNum, 7].Value == null ? null : sheet.Cells[rowNum, 7].Value.ToString(),
+                description = sheet.Cells[rowNum, 8].Value == null ? null : sheet.Cells[rowNum, 8].Value.ToString()
             };
 
             return prop;

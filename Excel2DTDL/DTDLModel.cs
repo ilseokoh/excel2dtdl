@@ -43,6 +43,10 @@ namespace Excel2DTDL
 #nullable enable
         public string? unit { get; set; }
         public bool? writable { get; set; }
+
+        public string? description { get; set; }
+
+        public string? displayName { get; set; }
 #nullable disable
     }
 
